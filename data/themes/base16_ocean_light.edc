@@ -1,0 +1,85 @@
+/* Base16 light theme: https://github.com/chriskempson/base16 */
+#define COL_DEF 80  80  80 255
+
+#define ANSI0   43  48  59 255
+#define ANSI1   52  61  70 255
+#define ANSI2   79  91 102 255
+#define ANSI3  101 115 126 255
+#define ANSI4  167 173 186 255
+#define ANSI5  192 197 206 255
+#define ANSI6  223 225 232 255
+#define ANSI7  239 241 245 255
+#define ANSI8  191  97 106 255
+#define ANSI9  208 135 112 255
+#define ANSI10 235 203 139 255
+#define ANSI11 163 190 140 255
+#define ANSI12 150 181 180 255
+#define ANSI13 143 161 179 255
+#define ANSI14 180 142 173 255
+#define ANSI15 171 121 103 255
+
+#define BG_COLOR 239 241 245 255
+
+color_classes {
+   color_class { name: "C0";  color: ANSI0; } // COL_BLACK
+   color_class { name: "C1";  color: ANSI1; } // COL_RED
+   color_class { name: "C2";  color: ANSI2; } // COL_GREEN
+   color_class { name: "C3";  color: ANSI3; } // COL_YELLOW
+   color_class { name: "C4";  color: ANSI4; } // COL_BLUE
+   color_class { name: "C5";  color: ANSI5; } // COL_MAGENTA
+   color_class { name: "C6";  color: ANSI6; } // COL_CYAN
+   color_class { name: "C7";  color: ANSI7; } // COL_WHITE
+
+   color_class { name: "C8";  color: ANSI8; } // COL_BLACK
+   color_class { name: "C9";  color: ANSI9; } // COL_RED
+   color_class { name: "C10"; color: ANSI10; } // COL_GREEN
+   color_class { name: "C11"; color: ANSI11; } // COL_YELLOW
+   color_class { name: "C12"; color: ANSI12; } // COL_BLUE
+   color_class { name: "C13"; color: ANSI13; } // COL_MAGENTA
+   color_class { name: "C14"; color: ANSI14; } // COL_CYAN
+   color_class { name: "C15"; color: ANSI15; } // COL_WHITE
+
+   color_class { name: "c0";  color: COL_DEF; }
+   color_class { name: "c1";  color: ANSI0; }
+   color_class { name: "c2";  color: ANSI1; }
+   color_class { name: "c3";  color: ANSI2; }
+   color_class { name: "c4";  color: ANSI3; }
+   color_class { name: "c5";  color: ANSI4; }
+   color_class { name: "c6";  color: ANSI5; }
+   color_class { name: "c7";  color: ANSI6; }
+   color_class { name: "c8";  color: ANSI7; }
+
+   color_class { name: "c11"; color: COL_DEF; }
+
+   color_class { name: "c12"; color: ANSI15; }
+   color_class { name: "c13"; color: ANSI8; }
+   color_class { name: "c14"; color: ANSI9; }
+   color_class { name: "c15"; color: ANSI10; }
+   color_class { name: "c16"; color: ANSI11; }
+   color_class { name: "c17"; color: ANSI12; }
+   color_class { name: "c18"; color: ANSI13; }
+   color_class { name: "c19"; color: ANSI14; }
+   color_class { name: "c20"; color: ANSI15; }
+
+   color_class { name: "c25"; color: ANSI8; }
+   color_class { name: "c26"; color: ANSI9; }
+   color_class { name: "c27"; color: ANSI10; }
+   color_class { name: "c28"; color: ANSI11; }
+   color_class { name: "c29"; color: ANSI12; }
+   color_class { name: "c30"; color: ANSI13; }
+   color_class { name: "c31"; color: ANSI14; }
+   color_class { name: "c32"; color: ANSI15; }
+
+   color_class { name: "c37"; color: ANSI8; }
+   color_class { name: "c38"; color: ANSI9; }
+   color_class { name: "c39"; color: ANSI10; }
+   color_class { name: "c40"; color: ANSI11; }
+   color_class { name: "c41"; color: ANSI12; }
+   color_class { name: "c42"; color: ANSI13; }
+   color_class { name: "c43"; color: ANSI14; }
+   color_class { name: "c44"; color: ANSI15; }
+}
+
+#define INHERIT_PROVIDE_OWN_COLORS
+
+#include "mild.edc"
