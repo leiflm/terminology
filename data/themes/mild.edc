@@ -1531,7 +1531,10 @@ collections {
 
    //////////////////////////////////////////////////////////////////////////////
    //// the cursor to show where text is typed
-   group { name: "terminology/cursor";
+   group { name: "terminology/default_cursor";
+#ifndef INHERIT_PROVIDE_OWN_CURSOR
+      alias: "terminology/cursor";
+#endif
       images {
         image: "cr_key.png" COMP;
         image: "cr_out.png" COMP;
