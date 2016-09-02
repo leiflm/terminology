@@ -17,6 +17,7 @@ solarized.edj \
 solarized_light.edj \
 smyck.edj \
 mustang.edj \
+arc.edj \
 base16_ocean_dark.edj
 
 AM_V_EDJ = $(am__v_EDJ_$(V))
@@ -28,6 +29,7 @@ default.edc \
 mild.edc \
 black.edc \
 mustang.edc \
+arc.edc \
 base16_ocean_dark.edc \
 solarized.edc \
 solarized_light.edc \
@@ -63,6 +65,11 @@ mustang.edj: Makefile mustang.edc mild.edc default_colors.in.edc
 	$(AM_V_EDJ)$(EDJE_CC) $(EDJE_FLAGS) \
 	$(top_srcdir)/data/themes/mustang.edc \
 	$(top_builddir)/data/themes/mustang.edj
+
+arc.edj: Makefile arc.edc mild.edc default_colors.in.edc
+	$(AM_V_EDJ)$(EDJE_CC) $(EDJE_FLAGS) \
+	$(top_srcdir)/data/themes/arc.edc \
+	$(top_builddir)/data/themes/arc.edj
 
 base16_ocean_dark.edj: Makefile base16_ocean_dark.edc mild.edc default_colors.in.edc
 	$(AM_V_EDJ)$(EDJE_CC) $(EDJE_FLAGS) \
